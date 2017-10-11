@@ -1,0 +1,19 @@
+{
+    "name": "hausir/think-auth",
+    "description": "http api auth for thinkphp5",
+    "type": "library",
+    "require": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hausir",
+            "email": "hausir@icloud.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "hausir\\": "src/"
+        }
+    }
+}
