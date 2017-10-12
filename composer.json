@@ -1,8 +1,10 @@
 {
     "name": "hausir/think-auth",
     "description": "http api auth for thinkphp5",
-    "type": "library",
+    "type": "think-extend",
     "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^5.0"
     },
     "license": "MIT",
     "authors": [
@@ -14,6 +16,11 @@
     "autoload": {
         "psr-4": {
             "hausir\\": "src/"
+        }
+    },
+    "extra": {
+        "think-config": {
+            "auth": "src/config.php"
         }
     }
 }
