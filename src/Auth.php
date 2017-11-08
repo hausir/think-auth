@@ -35,8 +35,7 @@ class Auth
     public function login()
     {
         ['account' => $account, 'password' => $password] = $this->getBasic();
-        $account_fields = (array)$this->config['account_fields'];
-        $user = static::$objUser->where(implode('|', $account_fields), $account)->find();
+        $user = static::$objUser->getByAccount($account);
         if (empty($user) || !$user->verifyPassword($password)) {
             return false;
         }
