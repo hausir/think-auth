@@ -4,7 +4,7 @@
     "type": "think-extend",
     "require": {
         "php": ">=7.1.0",
-        "topthink/framework": "^5.0"
+        "hausir/framework": "dev-master"
     },
     "license": "MIT",
     "authors": [
